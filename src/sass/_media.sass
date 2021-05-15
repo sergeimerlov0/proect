@@ -1,11 +1,52 @@
-
-@media (max-width: 991px)
+@media ( max-width: 1200px)
     .promo
-        padding-left: 10px
-        padding-right: 10px
+        padding-left: 20px
+        padding-right: 20px
+    .advantages
+        padding-left: 20px
+        padding-right: 20px
+@media ( max-width: 991px)
+    .promo
+        &__header
+            font-size: 35px
+        &__subheader
+            font-size: 20px
+    .advantages
+        &__cup
+            &_text
+                width: 240px
+                font-size: 12px
+@media ( max-width: 767px)
+    .promo
         &__wrapper
             align-items: center
-@media (max-width: 767px)
+        .header
+            &__official
+                display: none
+    .advantages
+        &__subheader
+            flex-direction: column
+        &__cup
+            &_text
+                width: 80%
+                font-size: 18px
+                display: block
+                margin: 20px auto
+@media ( max-width: 575px)
     .promo
+        &__icons
+            display: none
         &__wrapper
-            margin-top: 40px
+            margin-top: 60px
+    .header
+        display: block
+        &__contacts
+            display: block
+            margin: 10px auto
+        &__phone
+            text-align: center
+    .button
+        display: block
+        margin: 10px auto
+        &_main
+            width: 270px
