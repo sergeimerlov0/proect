@@ -9,6 +9,14 @@
         padding: 100px 20px 92px 20px
     .title
         font-size: 34px
+    .carusel
+        &__inner
+            width: 600px
+            img
+                width: 100%
+    .catalog
+        &-inner
+            width: 292px
 @media ( max-width: 991px)
     .promo
         &__header
@@ -24,6 +32,21 @@
         padding: 80px 20px 60px 20px
     .title
         font-size: 33px
+    .carusel
+        ul
+            list-style-type: none
+            li
+                button
+                    border: 1px solid red 
+                    border-radius: 100%
+                    background: white 
+                    color: white
+                    &:hover
+                        background: red 
+                        color: red 
+    .catalog
+        &__content
+            justify-content: center
 @media ( max-width: 767px)
     .promo
         &__wrapper
