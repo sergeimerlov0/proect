@@ -47,6 +47,12 @@
     .catalog
         &__content
             justify-content: center
+    .reviews
+        &__img
+            width: 140px
+            height: 140px
+        &__subtitle
+            width: 555px
 @media ( max-width: 767px)
     .promo
         &__wrapper
@@ -71,6 +77,36 @@
     .title
         font-size: 28px
         text-align: center
+    .carusel
+        &__inner
+            width: 560px
+            img
+                width: 100%
+    .catalog
+        &__tab
+            width: 155px
+            font-size: 14px
+    .reviews
+        &__piople
+            flex-direction: column
+        &__img
+            display: block
+            margin: 0 auto
+            margin-bottom: 10px
+        &__header
+            text-align: center
+        &__title 
+            text-align: center
+        &__subtitle 
+            width: 100%
+            font-size: 14px
+            padding: 10px
+    .footer
+        height: 270px
+        &__cart
+            display: none
+        &__info
+            width: 100%
 @media ( max-width: 575px)
     .promo
         &__icons
@@ -100,3 +136,18 @@
     .button
         &_main
             width: 100%
+    .carusel
+        &__inner
+            width: 100%
+            img
+                width: 100%
+    .catalog
+        .hrun   
+            font-size: 28px
+        &__tabs
+            flex-direction: column
+            align-items: center
+        &__tab 
+            width: 240px
+            font-size: 18px
+            margin-top: 10px
